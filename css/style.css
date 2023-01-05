@@ -1,0 +1,110 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: #009a7e;
+  position: relative;
+}
+.center {
+    position: absolute;
+    width: 100%;
+    top: 10em;
+}
+.panel {
+  background: #fff;
+  padding: 0;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05), 0 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.panel .panel-heading {
+  padding: 20px 15px;
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+}
+.panel .panel-heading .title {
+  color: #000;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 40px;
+  margin: 0;
+}
+.panel .panel-body {
+  padding: 0;
+}
+thead {
+  background: #009a7e;
+}
+.panel .panel-body .table thead tr th {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 12px;
+  border: none;
+}
+.panel .panel-body .table tbody tr td {
+  color: #000;
+  font-size: 15px;
+  padding: 10px 12px;
+  vertical-align: middle;
+  border: none;
+}
+.panel .panel-body .table tbody tr:nth-child(even) {
+  background: #f3f3f3;
+}
+.panel .panel-body .table tbody tr:nth-child(even) td {
+    color: #009a7e;
+    font-weight: 600;
+}
+.panel .panel-footer {
+  color: #000;
+  background-color: transparent;
+  padding: 15px;
+}
+.panel .panel-footer .col {
+  line-height: 35px;
+}
+.pagination {
+  margin: 0;
+}
+.pagination li a {
+  color: #000;
+  background-color: transparent;
+  border: 2px solid transparent;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 31px;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin: 0 3px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+.pagination li a:hover {
+  color: #009a7e;
+  background-color: transparent;
+}
+.pagination li a:focus,
+.pagination li.active a,
+.pagination li.active a:hover {
+  color: #009a7e;
+  background-color: transparent;
+}
+/* .pagination li:first-child a,
+.pagination li:last-child a {
+  border-radius: 100%;
+} */
+@media only screen and (max-width: 767px) {
+  .panel .panel-heading .title {
+    text-align: center;
+    margin: 0 0 10px;
+  }
+  .pagination {
+    margin-top: 20px;
+    justify-content: center;
+    float: none;
+  }
+}
